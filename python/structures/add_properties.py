@@ -29,3 +29,13 @@ def MyIterator:
         ...                            # by convention, should raise
                                        #    StopIteration when nothing left
                                        #    to return
+
+# -------------------------------------------------------
+
+# check if a class has a method
+# hasattr(<object>, "<method name>")
+
+a = [2, 3, 4]
+hasattr(a, "__next__")  # False
+g = (x * x for x in a)
+hasattr(g, "__next__")  # True

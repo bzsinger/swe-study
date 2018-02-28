@@ -33,4 +33,20 @@ else:                       # only runs if **loop ends normally**
     ...                     #   if break out of loop, **does not** run
 
                             # use case: only want to run code if you
-                            #   **don't** find what you're looking fo
+                            #   **don't** find what you're looking for
+
+# -------------------------------------------------------
+
+# get reference to elements
+
+# for mutables
+a = [[2], [3], [4]]
+for v in a:
+    v += [5]
+a == [[2, 5], [3, 5], [4, 5]]
+
+# for immutables
+a = [2, 3, 4]
+for v in a:
+    v += 1
+a == [2, 3, 4]

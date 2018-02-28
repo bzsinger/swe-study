@@ -1,4 +1,4 @@
-# copying
+# replication
 
 s = [1, 2, 3]
 2 * s == [1, 2, 3, 1, 2, 3]

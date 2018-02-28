@@ -43,4 +43,4 @@ f == g == h     # True
 
 # to be in a set, an element must be hashable
 # mutables - list, set, dictionary - **not** hashable
-# immutables - string, int, tuple, frozenset -- hashable
+# immutables - str, int, bool, float, tuple, frozenset -- hashable

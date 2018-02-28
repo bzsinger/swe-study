@@ -3,7 +3,7 @@
 a = [2, 3, 4]
 b = [2]         # single item list
 
-## adding to the end of a list takes amortized constant time
+## adding to/removing from the end of a list takes amortized constant time
 ## lists are "front-loaded" - there's extra space in the back for
 ##      new elements
 a += [5]

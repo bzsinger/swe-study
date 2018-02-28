@@ -14,14 +14,23 @@ x = A()
 y = A()
 z = A()
 
+isinstance(z, A)      # True
+
 x.f() # self is x
 y.f() # self is y
 
 # inheritance
-class B(A):      # class B inherits from class A
+class B(A):           # class B inherits from class A
     ...
 
 issubclass(B, A)      # True
 
 # every class automatically inherits from object
 issubclass(A, object) # True
+
+# globals
+h = 0
+
+def f (...) :
+    global h         # access the 'h' variable
+    ...

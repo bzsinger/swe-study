@@ -12,7 +12,7 @@ d = {2: "a", 3: "b", 4: "c"}
 e = {k + 1: d[k] + "xyz" for k in d}  # dict comprehension (over keys in d)
 e == {3: "axyz", 4: "bxyz", 5: "cxyz"}
 
-
+# -------------------------------------------------------
 
 g = (x * x for x in a)  # generator
 list(g) == [4, 9, 16]

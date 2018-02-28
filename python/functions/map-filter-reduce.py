@@ -21,3 +21,17 @@ m = map(lambda x: x * x, f)     # returns mapped filter results
 list(m) == [9]
 list(f) == []                   # because map uses filter, map exhausts
 list(m) == []                   #   both generators
+
+# -------------------------------------------------------
+
+# reduce
+# usage: reduce(<binary function>, <iterable>, <seed>)
+
+from operator import reduce
+from functools import reduce
+
+a = [2, 3, 4]
+reduce(add, a, 1)   # 10
+reduce(mul, a, 1)   # 24
+reduce(None, [], 3) # if iterable empty, returns classes_and_methods
+                    #   does not use function

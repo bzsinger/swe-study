@@ -1,22 +1,5 @@
 # Concepts
 
-### Assertions
-**Good for:**
-- Preconditions
-- Postconditions
-
-**Not good for:**
-- testing - assertions raise exceptions that stop all tests
-  - better option: unit tests - continues running tests if one fails
-- user error - exceptions provide better error messages
-  - better option: exceptions
-
-**Use:**
-```python
-assert <boolean statement>
-```
-Error gives filename, line, function name, assertion that failed. Traceback shows inciting call.
-
 ### Caching
 **Memoization:** Remember old values
 
@@ -27,9 +10,9 @@ Error gives filename, line, function name, assertion that failed. Traceback show
 **Meta cache:** Hard-code values or heuristic values in code
 
 ### Testing
-**Unit testing:** Test individual methods or parts of the solution
+**Unit testing:** Test individual methods or parts of the solution (white box)
 
-**Acceptance testing:** Test the entire solution – how the parts fit together.
+**Acceptance testing:** Test the entire solution – how the parts fit together (black box)
 
 ### REPL - Read-Eval-Print Loop
 A problem that reads and evaluates input continuously
@@ -96,3 +79,6 @@ Many languages optimize "tail recursion." Python doesn't.
 
 ## Iteration
 Does not consume a stack. Returns one value at a time. Allows multiple users to simultaneously iterate over a data structure.
+
+## Object Model
+Java as a **closed** object model - all instances of a Java class have the same set of data. Python has an **open** object model - instances can gain and lose data.

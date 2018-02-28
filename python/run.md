@@ -39,4 +39,9 @@ Python scripts have
 - definitions
 - code
 
-When directly executing a script, you want 
+When directly executing a script or importing it interactively, need:
+- definitions
+- code
+
+When importing a script from another script, need:
+- definitions

@@ -21,6 +21,33 @@ j += 2              # j == 7
 # -------------------------------------------------------
 
 """
+valid on the left-hand-side of assignment, you're an l-value
+if not, you're an r-value
+i is an l-value
+2 is an r-value
+"""
+i = 2
+
+"""
++ takes two r-values
++ is an expression, cannot stand alone
+
+i += j
+i += 2
+3 += 2  # does not work
+"""
+
+
+"""
++= takes an l-value on the left and an r-value on the right
++= can stand alone, is a statement
+
+in Python, returns nothing
+in C and Java, returns an r-value
+in C++, returns an l-value
+"""
+
+"""
 k = ++i     # puts value of **incremented** i into k,
 k = i++     # puts **old** value of i into k
             #    needs to make a copy of i and return old value
@@ -44,6 +71,7 @@ i++++                          # doesn't work in any language
 # -------------------------------------------------------
 
 # list's +=
+## takes an iterable on the right, **asymmetric**
 a = [2, 3, 4]
 a += [5]
 a == [2, 3, 4, 5]       # True
@@ -52,6 +80,7 @@ a += (6, )
 a == [2, 3, 4, 5, 6]    # True - list's += **does not** require a list
 
 # tuple's +=
+## take a tuple on the right, **symmetric**
 a = (2, 3, 4)
 a += (5, )
 a == (2, 3, 4, 5)       # True
@@ -60,6 +89,7 @@ a == (2, 3, 4, 5)       # True
                         # it creates a **new** tuple
 
 # list's ___ + ____
+## takes a list on the right, **symmetric**
 a = [2, 3, 4]
 # a = a + (5, )        # **does not* work, list's __ + __ is stricter because
                        # it creates a **new** list

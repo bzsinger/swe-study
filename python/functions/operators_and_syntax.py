@@ -25,6 +25,10 @@ a block comment
 "abc" <  "bc"  # True - lexographical order
 "bc"  >  "abc"
 
+strcmp("", "") == 0
+strcmp("abc", "ab") > 0
+strcmp("ab", "abc") < 0
+
 # string - immutable
 s = "abc"
 s[1] == "a"    # True

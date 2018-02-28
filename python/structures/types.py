@@ -40,3 +40,6 @@ a = {2: "abc", 3: "def", 4: "ghi"}
 type(a)         # dict
 p = iter(a)
 type(p)         # dict key iterator
+
+g = (x * x for x in a)
+type(g)         # generator

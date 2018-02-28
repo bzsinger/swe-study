@@ -69,4 +69,10 @@ a.__iter__()
 
 # -------------------------------------------------------
 
+# iterables (ex. list, set, range) - **not exhaustible**
+
+# iterators (ex. list iterator, range iterator, count, zip) - **exhaustible**
+#   - lazy, constant time, constant space
+#   - accomodates infinite structures (ex. count)
+
 # see structures/add_properties.py
