@@ -39,3 +39,4 @@ a = [2, 3, 4]
 hasattr(a, "__next__")  # False
 g = (x * x for x in a)
 hasattr(g, "__next__")  # True
+hasattr(g, "__iter__")  # True
