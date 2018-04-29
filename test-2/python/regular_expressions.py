@@ -43,3 +43,55 @@ re.split(r'\w', s)     # ['', ' ', '', '\n', '', '', ' ', '', '', '']
 
 # \W - captures any non-alphanumeric character
 re.split(r'\W', s)     # ['b', 'ab', 'aab', '123']
+
+# ------------------------------------------------------------------------
+
+# search
+s = 'b ab\naab 123'
+
+# * - any number of previous character (0+)
+# [^] - within [], ^ means not
+# each ( ) forms a capture group
+m = re.search('(a*b)([^a]*)(a*)b', s) # full result (group 0)
+                                      # looking for 0+ a's followed by a 'b' (group 1)
+                                      #     then, 0+ non-'a' characters      (group 2)
+                                      #     then, 0+ a's                     (group 3)
+                                      #     followed immediately by a 'b'
+
+                                      # returns a match object
+
+m.group(0)  # 'b ab'
+m.group(1)  # 'b'
+...
+
+# + - at least 1 of previous character (1+)
+m = re.search('(a+b)([^a]*)(a+)b', s) # full result (group 0)
+                                      # looking for 1+ a's followed by a 'b' (group 1)
+                                      #     then, 0+ non-'a' characters      (group 2)
+                                      #     then, 1+ a's                     (group 3)
+                                      #     followed immediately by a 'b'
+
+                                      # returns a match object
+
+m.group(0)  # 'ab\naab'
+m.group(1)  # 'a'
+m.group(2)  # '\n'
+m.group(3)  # 'aa'
+
+# ? - 0 or 1 instances of of previous character
+m = re.search('(a+b)([^a]*)(a?)', s) # full result (group 0)
+                                      # looking for 0 or 1 a's followed by a 'b' (group 1)
+                                      #     then, 0+ non-'a' characters          (group 2)
+                                      #     then, 0 or 1 a's                     (group 3)
+                                      #     followed immediately by a 'b'
+
+                                      # returns a match object
+
+# ------------------------------------------------------------------------
+
+# sub
+s = 'b ab\naab 123'
+
+t = re.sub('b ', 'xx', s)   # 'xxab\naaxx123'
+                            # returns new string with instances of second
+                            #   argument substituted for first
