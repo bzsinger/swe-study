@@ -26,6 +26,7 @@
 
 ex.
 ```
+movies:
 title         year    director          genre
 "shane"       1953    "george stevens"  western
 "star wars"   1977    "george lucas"    western
@@ -36,11 +37,12 @@ title         year    director          genre
 - order of filling in tables important because we need to reference directors within movies
 
 ```
+movies:
 title         year    director    genre
 "shane"       1953    1           western
 "star wars"   1977    2           western
 
-director table:
+directors:
 id    name
 1     "george stevens"
 2     "george lucas"
