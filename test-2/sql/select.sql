@@ -1,5 +1,14 @@
 /* select */
 
+/*
+select
+    - takes: table, predicate
+    - produces: table
+
+- returns full row for every entry that matches predicate
+*/
+
+
 /* assume tables:
 Student
   sID     int not null, primary key
@@ -13,14 +22,6 @@ Apply
 
   foreign key(sID) references Student(sID)
 
-*/
-
-/*
-select
-    - takes: table, predicate
-    - produces: table
-
-- returns full row for every entry that matches predicate
 */
 
 select *
