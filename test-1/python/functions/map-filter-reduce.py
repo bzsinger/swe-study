@@ -27,11 +27,11 @@ list(m) == []                   #   both generators
 # reduce
 # usage: reduce(<binary function>, <iterable>, <seed>)
 
-from operator import reduce
+from operator import mul
 from functools import reduce
 
 a = [2, 3, 4]
 reduce(add, a, 1)   # 10
 reduce(mul, a, 1)   # 24
-reduce(None, [], 3) # if iterable empty, returns classes_and_methods
+reduce(None, [], 3) # if iterable empty, returns seed
                     #   does not use function

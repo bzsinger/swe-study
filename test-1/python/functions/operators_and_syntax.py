@@ -15,8 +15,8 @@ a block comment
 # -------------------------------------------------------
 
 # bit shift operators
-1 << 1 # left shift - multiplies by a power of two
-2 >> 1 # right shift - divides by a power of two
+1 << 1 # left shift - multiplies by two
+2 >> 1 # right shift - divides by two
 
 # -------------------------------------------------------
 

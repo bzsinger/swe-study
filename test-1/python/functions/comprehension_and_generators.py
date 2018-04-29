@@ -5,7 +5,7 @@ b = [x * x for x in a]                # list comprehension
 b == [4, 9, 16]
 
 s = {2, 3, 4}
-t = {x * 5 for x in a}                # set comprehension
+t = {x * 5 for x in s}                # set comprehension
 t == {10, 15, 20}
 
 d = {2: "a", 3: "b", 4: "c"}

@@ -46,7 +46,7 @@ r = range(2, 5)         # returns an iterator
                         # construction is O(1), next is O(1)
 
 list(r) == [2, 3, 4]
-list(r) == []           # r is exhausted by list's iterator
+list(r) == [2, 3, 4]    # not exhaustible
 
 # -------------------------------------------------------
 

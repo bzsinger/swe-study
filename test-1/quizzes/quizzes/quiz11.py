@@ -1,0 +1,23 @@
+# what is the output of the following?
+def test1 () :
+    a  = [2, 3, 4]
+    b  = a
+    b += (5,)
+    print(a, end = " ")
+    print(a is b)
+
+# what is the output of the following?
+def test2 () :
+    a = [2, 3, 4]
+    b = a
+    b = b + [5]
+    print(a, end = " ")
+    print(a is b)
+
+# what is the output of the following?
+def test3 () :
+    a  = (2, 3, 4)
+    b  = a
+    b += (5,)
+    print(a, end = " ")
+    print(a is b)
