@@ -12,6 +12,8 @@ f(*t, 2)    # [3, 4, 2] - can do unpacking before position
 # f(x=2, *t)    # * has higher precedence than pass by name, gets multiple
                 #   values for x
 
+f(z=7, *t)  # [3, 4, 7] - can pass by name before unpacking
+
 # ------------------------------------------------------------------------
 
 # ** requires dict (or something like it)
