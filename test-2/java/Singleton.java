@@ -1,8 +1,8 @@
 public class Singleton {
-    
+
     // Be lazy and instantiate only when first use
     private static Singleton instance = null;
-    
+
     private Singleton() {}  // Do not allow outside world to instantiate
 
     public static Singleton getInstance() {
