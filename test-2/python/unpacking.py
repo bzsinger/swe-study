@@ -3,6 +3,18 @@
 def f(x, y, z):
     return [x, y, z]
 
+f(2, 3, 4)              # [2, 3, 4] - can pass parameters by position
+f(y=3, z=4, x=2)        # [2, 3, 4] - can pass parameters by position
+
+# precedence
+#   1. by position  -   non-dictionary unpacking
+#   2. by name      -   dictionary unpacking
+
+# ------------------------------------------------------------------------
+
+def f(x, y, z):
+    return [x, y, z]
+
 # * - requires iterables
 
 t = (3, 4)
