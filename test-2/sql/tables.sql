@@ -1,5 +1,8 @@
 /* creating tables */
 
+drop table if exists Student /* guarantees no conflicts creating table */
+drop table if exists Apply   /*   remove what already exists */
+
 create table Student (
   sID   int not null, /* integer ID, cannot be null */
   sName text,

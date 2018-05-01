@@ -18,8 +18,8 @@ Apply
 /* ------------------------------------------------------------------------ */
 
 /* cross join
-    - takes: table, table
-    - produces: table
+    - input: table, table
+    - output: table
 */
 
 select *
@@ -36,8 +36,8 @@ select *
 /* ------------------------------------------------------------------------ */
 
 /* theta join
-    - takes: table, table, predicate (identify matching attributes)
-    - produces: table
+    - input: table, table, predicate (identify matching attributes)
+    - output: table
 */
 
 select *
@@ -71,6 +71,35 @@ select *
   /* if no attributes match, returns *cross join*
       if an attribute matches, returns only rows with matching values for those
         attributes */
+
+/* ------------------------------------------------------------------------ */
+
+/* right join
+    - takes: table, table
+    - produces: table
+*/
+
+select *
+  from Student
+  left join Apply on (Student.sID = Apply.sID)
+
+/* includes values from left (Student) table even if Apply doesn't have
+      matching values - uses NULL values as substitutes for missing values */
+
+/* ------------------------------------------------------------------------ */
+
+/* right join
+    - takes: table, table
+    - produces: table
+*/
+
+select *
+  from Student
+  right join Apply on (Student.sID = Apply.sID)
+
+  /* includes values from right (Apply) table even if Student doesn't have
+      matching values - uses NULL values as substitutes for missing values */
+
 
 /* ------------------------------------------------------------------------ */
 

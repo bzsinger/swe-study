@@ -2,8 +2,8 @@
 
 /*
 select
-    - takes: table, predicate
-    - produces: table
+    - input: table, predicate
+    - output: table
 
 - returns full row for every entry that matches predicate
 */

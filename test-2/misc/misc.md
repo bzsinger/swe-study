@@ -16,13 +16,13 @@
 |_____|           |_____|
 
  _____             _____  
-|     |       *   |     |
-|  A  |   <|----- |  B  |     - A has many Bs
-|_____|           |_____|
+|     |     *  1  |     |
+|  A  |   <|----- |  B  |     - A-B have many-1 relationship
+|_____|           |_____|     -   (1 B is shared by many As)
 
  _____             _____  
-|     |       1   |     |
-|  A  |   <|----- |  B  |     - A has 1 Bs
-|_____|           |_____|
+|     |     1  *  |     |
+|  A  |   <|----- |  B  |     - A-B have 1-many relationship
+|_____|           |_____|     -   (1 A has many Bs)
 
 ```

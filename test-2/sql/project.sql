@@ -2,8 +2,8 @@
 
 /*
 project
-    - takes: table, list of attributes (column names)
-    - produces: table
+    - input: table, list of attributes (column names)
+    - output: table
 
 - returns requested columns from given table
 */

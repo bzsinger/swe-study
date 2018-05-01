@@ -31,13 +31,21 @@ f(z=7, *t)  # [3, 4, 7] - can pass by name before unpacking
 # ** requires dict (or something like it)
 #   keys must have same names as function parameters
 
-d = {"z": 4, "y": 3, "x": 2}
+d = {'z': 4, 'y': 3, 'x': 2}
 f(**d)     # [2, 3, 4]
 
 # f(x=2, **d)   # gets conflicting values for x
 
-e = {"z": 4, "y": 3}
+e = {'z': 4, 'y': 3}
 f(2, **e)  # because no x in dict, can consume first argument by position
 
 # f(**d, 2)         # cannot unpack dictionary before position
 # f(**d, *t, y=2)   # cannot unpack dictionary before iterable unpacking
+
+# ------------------------------------------------------------------------
+
+# can also unpack into dictionary constructors
+d = {'z': 4, 'y': 3, 'x': 2}
+e = {'w': 0, 'v': 1}
+
+z = {**e, **d}      # {'w': 0, 'v': 1, 'z': 4, 'y': 3, 'x': 2}
