@@ -2,10 +2,12 @@
 
 // cannot make instance of class
 abstract class A {
-  
+
     // once method marked abstract, class must also
     //  be abstract
-    abstract void f(long a) {} // must override
+    // children must define method
+    // cannot define method in parent
+    abstract void f(long a);  // must override
 
 
     // can include non-abstract methods in class,
