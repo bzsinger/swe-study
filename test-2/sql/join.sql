@@ -56,6 +56,8 @@ select *
 /* if table A has x rows, and table B has y rows, A inner join B has
       at most max(x, y) rows */
 
+/* if forget 'on' or 'using', does cross-join */
+
 /* ------------------------------------------------------------------------ */
 
 /* natural join

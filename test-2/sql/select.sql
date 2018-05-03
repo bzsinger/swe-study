@@ -31,4 +31,17 @@ select *
 select *
   from Student
   where (GPA > 3.7) and (sID > 100)
-  /* can use standard boolean operations */
+  /* can use standard boolean operations - and, or, not */
+
+select sID, sName
+    from Student
+    where sID in (
+        select sID
+            from Apply
+            where (major = 'CS')
+    )
+    and sID not in (
+        select sID
+            from Apply
+            where (major = 'EE')
+    );

@@ -19,6 +19,23 @@ select *
   from Student
   where sName = "Amy" or sName = "Jay" or sName = "Mary"
 
+/* can use subquery for 'in' list */
+/* assume tables:
+Apply
+  sID         int
+  major       text
+  foreign key (sID)   references Student (sID)
+*/
+
+select GPA
+  from Student
+  where sID in (
+    select sID
+      from Apply
+      where (major = 'CS')
+  )
+  order by GPA desc
+
 /* ------------------------------------------------------------------------ */
 
 /* between */
