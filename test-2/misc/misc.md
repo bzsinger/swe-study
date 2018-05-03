@@ -12,7 +12,7 @@
 
  _____             _____  
 |     |           |     |
-|  A  |   <|----- |  B  |     - B can exist separately from A
+|  A  |   <------ |  B  |     - B can exist separately from A
 |_____|           |_____|
 
  _____             _____  

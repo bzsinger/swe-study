@@ -76,7 +76,7 @@ select *
 
 /* ------------------------------------------------------------------------ */
 
-/* right join
+/* left join
     - takes: table, table
     - produces: table
 */
