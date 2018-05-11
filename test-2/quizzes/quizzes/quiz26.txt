@@ -1,0 +1,14 @@
+What is the output of the following?
+s = "bxyab\naabxy123"
+m = re.search("(a*)b([^a]*)(a*)b", s)
+print("[" + m.group(2) + "]")
+
+What is the output of the following?
+s = "bxyab\naabxy123"
+m = re.search("(a+)b([^a]*)(a+)b", s)
+print("[" + m.group(3) + "]")
+
+What is the output of the following?
+s = "bxyab\naabxy123"
+m = re.search("(a?)b([^a]*)(a?)b", s)
+print("[" + m.group(0) + "]")

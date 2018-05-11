@@ -1,5 +1,4 @@
-// what is the output of the following?
-
+What is the output of the following?
 class Test1 {
     public static void test () {
         String s = new String("abc");
@@ -8,11 +7,9 @@ class Test1 {
         System.out.print(" ");
         System.out.println(s.equals(t));}}
 
-// what is the output of the following?
-
+What is the output of the following?
 class A
     {}
-
 class Test2 {
     public static void test () {
         A x = new A();
@@ -20,3 +17,19 @@ class Test2 {
         System.out.print(x == y);
         System.out.print(" ");
         System.out.println(x.equals(y));}}
+
+What is the output of the following?
+def test3 () :
+    x = [2, 3, 4]
+    y = [2, 3, 4]
+    print(x is y, end=" ")
+    print(x == y)
+
+What is the output of the following?
+class A :
+    pass
+def test4 () :
+    x = A()
+    y = A()
+    print(x is y, end=" ")
+    print(x == y)

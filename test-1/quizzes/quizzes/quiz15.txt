@@ -1,20 +1,29 @@
-# what is the output of the following?
+What's the output of the following?
 def test1 () :
     a = [2, 3, 4]
     print(list(a), end=" ")
     print(list(a))
 
-# what is the output of the following?
+What's the output of the following?
 def test2 () :
     a = [2, 3, 4]
     p = iter(a)
     print(list(p), end=" ")
     print(list(p))
 
-# what is the output of the following?
+What's the output of the following?
 def test3 () :
     a = [2, 3, 4]
     p = iter(a)
     print(p is a, end=" ")
     q = iter(p)
     print(q is p)
+
+What's the output of the following?
+def test4 () :
+    a = count(2)
+    b = [5, 6]
+    z = zip(a, b)
+    b += (7,)
+    print(list(z), end=" ")
+    print(list(z))

@@ -1,0 +1,8 @@
+In Ch.1 of Refactoring, what is the multiplicity between a Customer object and a Rental object?
+[RF: Ch. 1, pg. 2]
+
+In Ch.1 of Refactoring, what is the multiplicity between a Rental object and a Movie object?
+[RF: Ch. 1, pg. 2]
+
+In Ch.1 of Refactoring, what is advised to be built in the first step in refactoring?
+[RF: Ch. 1, pg. 7]

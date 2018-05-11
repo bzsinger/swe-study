@@ -1,0 +1,20 @@
+Which of the following is not one of the four elements of the Circle of Life?
+[XP: Ch. 2, Pg. 16]
+
+Which of the following did Joel Spolsky advise?
+[College Advice]
+excel in non-CS classes
+graduate on time
+learn Java
+study in groups
+take summer classes
+
+What is the output of the following?
+def f (n) :
+    return n + (n >> 1) + 1
+def test () :
+    print(f(7))
+
+Given positive integers, b and e, let m = (e / 2) + 1.
+If b < m, then max_cycle_length(b, e) = max_cycle_length(m, e).
+[Collatz]

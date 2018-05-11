@@ -1,0 +1,31 @@
+What is the output of the following?
+def select (r, f) :
+    return filter(f, r)
+def project (r, *t) :
+    return ({a : d[a] for a in t if a in d} for d in r)
+def test1 () :
+    r = [
+        {"A" : 1, "B" : 4, "C" : 3},
+        {"A" : 2, "B" : 5, "C" : 2},
+        {"A" : 3, "B" : 6, "C" : 1}]
+    x = project(select(r, lambda d : d["B"] > 4), "A", "C")
+    print(list(x), end=" ")
+    print(list(x))
+
+What is the output of the following?
+def select (r, f) :
+    return filter(f, r)
+def project (r, *t) :
+    return ({a : d[a] for a in t if a in d} for d in r)
+def test2 () :
+    r = [
+        {"A" : 1, "B" : 4, "C" : 3},
+        {"A" : 2, "B" : 5, "C" : 2},
+        {"A" : 3, "B" : 6, "C" : 1}]
+    x = select(project(r, "A", "C"), lambda d : d["B"] > 4)
+    print(list(x), end=" ")
+    print(list(x))
+
+Fill in the blanks.
+Functions that use references to <blank> classes must be able to use objects of <blank> classes without knowing it.
+[The Liskov Substitution Principle]

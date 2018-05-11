@@ -1,0 +1,5 @@
+Sharing a monitor and keyboard while coding.
+
+Discard independent work and rewrite it.
+
+linear, amortized constant

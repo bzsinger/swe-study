@@ -1,0 +1,9 @@
+Which of the following practices demonstrates effective pair programming?
+[All I Really Needed to Know about Pair Programming I Learned in Kindergarten]
+
+Which of the following practices demonstrates effective extreme programming?
+[All I Really Needed to Know about Pair Programming I Learned in Kindergarten]
+
+Assume that append_front() and append_back() are defined for list.
+Further, assume that list is implemented as a front-loaded array.
+What are the complexities of each?

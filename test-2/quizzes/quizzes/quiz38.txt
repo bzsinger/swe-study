@@ -1,0 +1,25 @@
+In the video store refactoring, Fowler used Replace Type Code with State / Strategy.
+With that refactoring which of the following is true?
+(Maybe more than one.)
+[http://www.refactoring.com/catalog/replaceTypeCodeWithStateStrategy.html]
+
+  switch statement would be removed entirely
+  test harness would have to change
+  movie type would be easy to change
+  RegularPrice, NewReleasePrice, and ChildrensPrice would extend Price
+  Movie would become an abstract class
+  RegularMovie, NewReleaseMovie, and ChildrensMovie would extend Movie
+
+
+In the video store refactoring, Fowler used Replace Type Code with State / Strategy.
+An alternative would have been Replace Type Code with Subclasses.
+With that refactoring which of the following is true?
+(Maybe more than one.)
+[http://www.refactoring.com/catalog/replaceTypeCodeWithSubclasses.html]
+
+  test harness would have to change
+  RegularMovie, NewReleaseMovie, and ChildrensMovie would extend Movie
+  switch statement would be removed entirely
+  movie type would be easy to change
+  RegularPrice, NewReleasePrice, and ChildrensPrice would extend Price
+  Movie would become an abstract class

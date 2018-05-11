@@ -1,0 +1,7 @@
+movie type would be easy to change
+RegularPrice, NewReleasePrice, and ChildrensPrice would extend Price
+
+test harness would have to change
+RegularMovie, NewReleaseMovie, and ChildrensMovie would extend Movie
+switch statement would be removed entirely
+Movie would become an abstract class 

@@ -1,0 +1,24 @@
+What is _ in SQL most like in regular expressions?
+
+What is % in SQL most like in regular expressions?
+
+What is the output of the following?
+create table R (A int, B int);
+create table S (A int, C int, D int);
+
+insert into R values (1, 4);
+insert into R values (2, 5);
+insert into R values (3, 6);
+
+insert into S values (1, 3, 4);
+insert into S values (1, 4, 5);
+insert into S values (1, 4, 6);
+insert into S values (2, 4, 7);
+insert into S values (2, 5, 8);
+insert into S values (4, 7, 9);
+
+select B from R
+    where A in
+        (select A
+            from S
+            where D = 7);

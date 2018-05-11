@@ -1,0 +1,7 @@
+Guido van Rossum
+
+1980s
+
+// is floor division and it returns the type of its input
+
+8

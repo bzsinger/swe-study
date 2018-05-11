@@ -1,0 +1,8 @@
+What was the software bug?
+[Little Bug, Big Bang]
+
+Which of the following is not a flavor of agile?
+[The New Methodology
+
+Which of the following is not a recommended practice about continuous integration?
+[Continuous Integration]

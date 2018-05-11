@@ -1,0 +1,11 @@
+Who developed Python?
+
+When was Python developed?
+
+Which of the following is true?
+/ is floor division and it always returns a float
+/ is true division and it returns the type of its input
+// is floor division and it returns the type of its input
+// is true division and it always returns a float
+
+What is the cycle length of 3?

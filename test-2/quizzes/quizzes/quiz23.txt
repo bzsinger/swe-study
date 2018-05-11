@@ -1,0 +1,26 @@
+What is the output of the following?
+def f (x, y, z=4) :
+    return [x, y, z]
+def test1 () :
+    u = (5,)
+    v = {"z": 6}
+    print(f(2,  3,  *u), end=" ")
+    print(f(2, *v, **v))
+
+What is the output of the following?
+def g (x, y, z=4, *t) :
+    return [x, y, z, t]
+def test2 () :
+    u = (5, 6)
+    v = {"z": 7}
+    print(g( 2,   3,  *u),  end=" ")
+    print(g(*u, **v))
+
+What is the output of the following?
+def h (x, y, z=4, *t, **d) :
+    return [x, y, z, t, d]
+def test3 () :
+    u = (5, 6)
+    v = {"z": 7, "a": 8}
+    print(h( 2, t= 9,  *u),  end=" ")
+    print(h(*u, d=10, **v))

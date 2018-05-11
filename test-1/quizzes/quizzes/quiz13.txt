@@ -1,4 +1,4 @@
-# what is the output of the following?
+What's the output of the following?
 def test1 () :
     a = [2, 3, 4]
     p = iter(a)
@@ -8,7 +8,7 @@ def test1 () :
     p = iter(a)
     print(next(p))
 
-# what is the output of the following?
+What's the output of the following?
 def test2 () :
     a = [2, 3, 4]
     p = iter(a)
@@ -16,7 +16,7 @@ def test2 () :
     print(next(p), end=" ")
     print(next(p))
 
-# what is the output of the following?
+What's the output of the following?
 def test3 () :
     a = [2, 3, 4]
     p = iter(a)

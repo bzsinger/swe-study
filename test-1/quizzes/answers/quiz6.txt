@@ -1,0 +1,9 @@
+black box
+
+eager cache
+
+try body else finally
+
+try except A finally
+
+try except A finally

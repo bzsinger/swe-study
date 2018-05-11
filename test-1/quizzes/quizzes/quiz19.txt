@@ -1,0 +1,21 @@
+What's the output of the following?
+def test1 () :
+    a  = [2, 3, 4]
+    b  = [v + 1 for v in a]
+    a += [5]
+    print(list(b), end=" ")
+    print(list(b))
+
+What's the output of the following?
+def test2 () :
+    a = [2, 3, 4]
+    b = (v + 1 for v in a)
+    a = [2, 3, 4, 5]
+    print(list(b), end=" ")
+    print(list(b))
+
+Assume that some graduate students are teaching assistants, some are research assistants, and some are neither. What kind of specialization is that?
+[UML Design: Subclasses]
+
+Assume that some graduate students are teaching assistants, some are research assistants, but none are both. What kind of specialization is that?
+[UML Design: Subclasses]

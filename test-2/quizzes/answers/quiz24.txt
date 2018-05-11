@@ -1,0 +1,7 @@
+relation, predicate
+
+relation, attributes...
+
+(5, 2)
+
+(5, 5)
